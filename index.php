@@ -10,7 +10,7 @@ if(isset($_POST['no_pekerja'])){
     $kategori=$_POST['kategori'];
 	
     
-    $cek_data=mysqli_query($conn,"SELECT * FROM t_staf_li where no_pekerja='$no_pekerja' and katalaluan='$katalaluan' and kategori='$kategori'");//check either no pekerja, password and usertype are entered correctly
+$cek_data=mysqli_query($conn,"SELECT * FROM t_staf_li where no_pekerja='$no_pekerja' and katalaluan='$katalaluan' and kategori='$kategori'");//check either no pekerja, password and usertype are entered correctly
 
 $cek= mysqli_num_rows($cek_data);
 
